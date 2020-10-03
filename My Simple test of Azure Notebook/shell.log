@@ -1,0 +1,372 @@
+2017-11-21 13:54:48 - // include directory, this will be replaced by the kernel
+2017-11-21 13:54:48 - #I "/home/nbcommon/IfSharp/bin"
+2017-11-21 13:54:48 - // load base dlls
+2017-11-21 13:54:48 - #r "IfSharp.Kernel.dll"
+2017-11-21 13:54:48 - #r "NetMQ.dll"
+2017-11-21 13:54:48 - // open the global functions and methods
+2017-11-21 13:54:48 - open IfSharp.Kernel
+2017-11-21 13:54:48 - open IfSharp.Kernel.Globals
+2017-11-21 13:54:51 - F# Interactive for F# 4.1
+2017-11-21 13:54:51 - Freely distributed under the Apache 2.0 Open Source License
+2017-11-21 13:54:51 - For help type #help;;
+2017-11-21 13:54:51 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2017-11-21 13:54:51 -   seq []
+2017-11-21 13:54:51 - --> Added '/home/nbcommon/IfSharp/bin' to library include path
+2017-11-21 13:54:51 - --> Referenced '/home/nbcommon/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2017-11-21 13:54:51 - --> Referenced '/home/nbcommon/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2017-11-21 13:54:51 - Unknown content type on shell. msg_type is `comm_info_request`
+2017-11-21 13:57:14 - open System
+2017-11-21 13:57:14 - let Square x = x*x
+2017-11-21 13:57:14 - Console.WriteLine(Square(10))
+2017-11-21 14:04:35 - let animals = ["Cow"; "Horse"; "Dog"; "Cat"; "Lion"]
+2017-11-21 14:04:35 - for animal in animals do
+2017-11-21 14:04:35 -     Console.WriteLine($"Animal is {animal}")
+2017-11-21 14:04:35 -     
+2017-11-21 14:04:35 - This token is reserved for future use
+2017-11-21 14:04:35 - Unexpected whitespace in expression
+2017-11-21 14:04:35 - Unmatched '('
+2017-11-21 14:04:35 - End of file in string begun at or before here
+2017-11-21 14:05:56 - let animals = ["Cow"; "Horse"; "Dog"; "Cat"; "Lion"]
+2017-11-21 14:05:56 - for animal in animals do
+2017-11-21 14:05:56 -     Console.WriteLine("Animal is {0}", animal)
+2017-11-21 14:05:56 -     
+2017-11-21 14:07:42 - let animalsArray = [|"Cow"; "Horse"; "Dog"; "Cat"; "Lion"|]
+2017-11-21 14:07:42 - for animal in animalsArray do
+2017-11-21 14:07:42 -     Console.WriteLine("Animal is {0}", animal)
+2017-11-21 23:21:14 - // include directory, this will be replaced by the kernel
+2017-11-21 23:21:14 - #I "/home/nbcommon/IfSharp/bin"
+2017-11-21 23:21:14 - // load base dlls
+2017-11-21 23:21:14 - #r "IfSharp.Kernel.dll"
+2017-11-21 23:21:14 - #r "NetMQ.dll"
+2017-11-21 23:21:14 - // open the global functions and methods
+2017-11-21 23:21:14 - open IfSharp.Kernel
+2017-11-21 23:21:14 - open IfSharp.Kernel.Globals
+2017-11-21 23:21:17 - F# Interactive for F# 4.1
+2017-11-21 23:21:17 - Freely distributed under the Apache 2.0 Open Source License
+2017-11-21 23:21:17 - For help type #help;;
+2017-11-21 23:21:17 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2017-11-21 23:21:17 -   seq []
+2017-11-21 23:21:17 - --> Added '/home/nbcommon/IfSharp/bin' to library include path
+2017-11-21 23:21:17 - --> Referenced '/home/nbcommon/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2017-11-21 23:21:17 - --> Referenced '/home/nbcommon/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2017-11-21 23:21:18 - Unknown content type on shell. msg_type is `comm_info_request`
+2017-11-21 23:28:29 - //int
+2017-11-21 23:28:29 - let x = 10u
+2017-11-21 23:28:29 - //float
+2017-11-21 23:28:29 - let y = 20.067f
+2017-11-21 23:28:29 - //long
+2017-11-21 23:28:29 - let s = 200L
+2017-11-21 23:28:29 - //bigint
+2017-11-21 23:28:29 - let z = 1000000I
+2017-11-21 23:28:29 - printfn "x: %i" x
+2017-11-21 23:28:29 - printfn "y: %f" y
+2017-11-21 23:28:29 - printfn "s: %i" s
+2017-11-21 23:28:29 - printfn "z: %i" z
+2017-11-21 23:28:29 - The type 'System.Numerics.BigInteger' is not compatible with any of the types byte,int16,int32,int64,sbyte,uint16,uint32,uint64,nativeint,unativeint, arising from the use of a printf-style format string
+2017-11-21 23:29:00 - //int
+2017-11-21 23:29:00 - let x = 10u
+2017-11-21 23:29:00 - //float
+2017-11-21 23:29:00 - let y = 20.067f
+2017-11-21 23:29:00 - //long
+2017-11-21 23:29:00 - let s = 200L
+2017-11-21 23:29:00 - //bigint
+2017-11-21 23:29:00 - let z = 1000000I
+2017-11-21 23:29:00 - printfn "x: %i" x
+2017-11-21 23:29:00 - printfn "y: %f" y
+2017-11-21 23:29:00 - printfn "s: %i" s
+2017-11-21 23:29:00 - printfn "z: %s" z
+2017-11-21 23:29:00 - This expression was expected to have type
+2017-11-21 23:29:00 -     'string'    
+2017-11-21 23:29:00 - but here has type
+2017-11-21 23:29:00 -     'System.Numerics.BigInteger'    
+2017-11-21 23:29:54 - //int
+2017-11-21 23:29:54 - let x = 10u
+2017-11-21 23:29:54 - //float
+2017-11-21 23:29:54 - let y = 20.067f
+2017-11-21 23:29:54 - //long
+2017-11-21 23:29:54 - let s = 200L
+2017-11-21 23:29:54 - //bigint
+2017-11-21 23:29:54 - let z = 1000000L
+2017-11-21 23:29:54 - printfn "x: %i" x
+2017-11-21 23:29:54 - printfn "y: %f" y
+2017-11-21 23:29:54 - printfn "s: %i" s
+2017-11-21 23:29:54 - printfn "z: %i" z
+2017-11-21 23:34:43 - //int
+2017-11-21 23:34:43 - let x = 10u
+2017-11-21 23:34:43 - //float
+2017-11-21 23:34:43 - let y = 20.067f
+2017-11-21 23:34:43 - //long
+2017-11-21 23:34:43 - let s = 200L
+2017-11-21 23:34:43 - //bigint
+2017-11-21 23:34:43 - let z = 1000000L
+2017-11-21 23:34:43 - let char = 'x'
+2017-11-21 23:34:43 - let words = "Hello there!!"
+2017-11-21 23:34:43 - printfn "x: %i" x
+2017-11-21 23:34:43 - printfn "y: %f" y
+2017-11-21 23:34:43 - printfn "s: %i" s
+2017-11-21 23:34:43 - printfn "z: %i" z
+2017-11-21 23:34:43 - printfn "char: %c" char
+2017-11-21 23:34:43 - printfn " words: %s" words
+2017-11-21 23:37:40 - //int
+2017-11-21 23:37:40 - let x = 10u
+2017-11-21 23:37:40 - //float
+2017-11-21 23:37:40 - let y = 20.067f
+2017-11-21 23:37:40 - //long
+2017-11-21 23:37:40 - let s = 200L
+2017-11-21 23:37:40 - //bigint
+2017-11-21 23:37:40 - let z = 1000000L
+2017-11-21 23:37:40 - let char = 'x'
+2017-11-21 23:37:40 - let words = "Hello there!!"
+2017-11-21 23:37:40 - let trueValue = true
+2017-11-21 23:37:40 - let falseValue = false
+2017-11-21 23:37:40 - printfn "x: %i" x
+2017-11-21 23:37:40 - printfn "y: %f" y
+2017-11-21 23:37:40 - printfn "s: %i" s
+2017-11-21 23:37:40 - printfn "z: %i" z
+2017-11-21 23:37:40 - printfn "char: %c" char
+2017-11-21 23:37:40 - printfn "words: %s" words
+2017-11-21 23:37:40 - printfn "trueValue: %b" (trueVal)
+2017-11-21 23:37:40 - printfn "falseValue: %b" (falseValue)
+2017-11-21 23:37:40 - The value or constructor 'trueVal' is not defined. Maybe you want one of the following:
+2017-11-21 23:37:40 -    trueValue
+2017-11-21 23:37:51 - //int
+2017-11-21 23:37:51 - let x = 10u
+2017-11-21 23:37:51 - //float
+2017-11-21 23:37:51 - let y = 20.067f
+2017-11-21 23:37:51 - //long
+2017-11-21 23:37:51 - let s = 200L
+2017-11-21 23:37:51 - //bigint
+2017-11-21 23:37:51 - let z = 1000000L
+2017-11-21 23:37:51 - let char = 'x'
+2017-11-21 23:37:51 - let words = "Hello there!!"
+2017-11-21 23:37:51 - let trueValue = true
+2017-11-21 23:37:51 - let falseValue = false
+2017-11-21 23:37:51 - printfn "x: %i" x
+2017-11-21 23:37:51 - printfn "y: %f" y
+2017-11-21 23:37:51 - printfn "s: %i" s
+2017-11-21 23:37:51 - printfn "z: %i" z
+2017-11-21 23:37:51 - printfn "char: %c" char
+2017-11-21 23:37:51 - printfn "words: %s" words
+2017-11-21 23:37:51 - printfn "trueValue: %b" (trueValue)
+2017-11-21 23:37:51 - printfn "falseValue: %b" (falseValue)
+2017-11-21 23:39:21 - //int
+2017-11-21 23:39:21 - let x = 10u
+2017-11-21 23:39:21 - //float
+2017-11-21 23:39:21 - let y = 20.067f
+2017-11-21 23:39:21 - //long
+2017-11-21 23:39:21 - let s = 200L
+2017-11-21 23:39:21 - //bigint
+2017-11-21 23:39:21 - let z = 1000000L
+2017-11-21 23:39:21 - let char = 'x'
+2017-11-21 23:39:21 - let words = "Hello there!!"
+2017-11-21 23:39:21 - let trueValue = true
+2017-11-21 23:39:21 - let falseValue = false
+2017-11-21 23:39:21 - Console.WriteLine("Integral Data Types")
+2017-11-21 23:39:21 - printfn "x: %i" x
+2017-11-21 23:39:21 - printfn "y: %f" y
+2017-11-21 23:39:21 - printfn "s: %i" s
+2017-11-21 23:39:21 - printfn "z: %i" z
+2017-11-21 23:39:21 - Console.WriteLine("String Data Types")
+2017-11-21 23:39:21 - printfn "char: %c" char
+2017-11-21 23:39:21 - printfn "words: %s" words
+2017-11-21 23:39:21 - Console.WriteLine("Boolean Data Types")
+2017-11-21 23:39:21 - printfn "trueValue: %b" (trueValue)
+2017-11-21 23:39:21 - printfn "falseValue: %b" (falseValue)
+2017-11-21 23:39:21 - The value, namespace, type or module 'Console' is not defined. Maybe you want one of the following:
+2017-11-21 23:39:21 -    Consts
+2017-11-21 23:39:21 -    Control
+2017-11-21 23:39:21 - The value, namespace, type or module 'Console' is not defined. Maybe you want one of the following:
+2017-11-21 23:39:21 -    Consts
+2017-11-21 23:39:21 -    Control
+2017-11-21 23:39:21 - The value, namespace, type or module 'Console' is not defined. Maybe you want one of the following:
+2017-11-21 23:39:21 -    Consts
+2017-11-21 23:39:21 -    Control
+2017-11-21 23:39:36 - open System
+2017-11-21 23:39:36 - let Square x = x*x
+2017-11-21 23:39:36 - Console.WriteLine(Square(10))
+2017-11-21 23:39:39 - let animals = ["Cow"; "Horse"; "Dog"; "Cat"; "Lion"]
+2017-11-21 23:39:39 - for animal in animals do
+2017-11-21 23:39:39 -     Console.WriteLine("Animal is {0}", animal)
+2017-11-21 23:39:39 -     
+2017-11-21 23:39:40 - let animalsArray = [|"Cow"; "Horse"; "Dog"; "Cat"; "Lion"|]
+2017-11-21 23:39:40 - for animal in animalsArray do
+2017-11-21 23:39:40 -     Console.WriteLine("Animal is {0}", animal)
+2017-11-21 23:39:42 - //int
+2017-11-21 23:39:42 - let x = 10u
+2017-11-21 23:39:42 - //float
+2017-11-21 23:39:42 - let y = 20.067f
+2017-11-21 23:39:42 - //long
+2017-11-21 23:39:42 - let s = 200L
+2017-11-21 23:39:42 - //bigint
+2017-11-21 23:39:42 - let z = 1000000L
+2017-11-21 23:39:42 - let char = 'x'
+2017-11-21 23:39:42 - let words = "Hello there!!"
+2017-11-21 23:39:42 - let trueValue = true
+2017-11-21 23:39:42 - let falseValue = false
+2017-11-21 23:39:42 - Console.WriteLine("Integral Data Types")
+2017-11-21 23:39:42 - printfn "x: %i" x
+2017-11-21 23:39:42 - printfn "y: %f" y
+2017-11-21 23:39:42 - printfn "s: %i" s
+2017-11-21 23:39:42 - printfn "z: %i" z
+2017-11-21 23:39:42 - Console.WriteLine("String Data Types")
+2017-11-21 23:39:42 - printfn "char: %c" char
+2017-11-21 23:39:42 - printfn "words: %s" words
+2017-11-21 23:39:42 - Console.WriteLine("Boolean Data Types")
+2017-11-21 23:39:42 - printfn "trueValue: %b" (trueValue)
+2017-11-21 23:39:42 - printfn "falseValue: %b" (falseValue)
+2017-11-21 23:40:13 - //int
+2017-11-21 23:40:13 - let x = 10u
+2017-11-21 23:40:13 - //float
+2017-11-21 23:40:13 - let y = 20.067f
+2017-11-21 23:40:13 - //long
+2017-11-21 23:40:13 - let s = 200L
+2017-11-21 23:40:13 - //bigint
+2017-11-21 23:40:13 - let z = 1000000L
+2017-11-21 23:40:13 - let char = 'x'
+2017-11-21 23:40:13 - let words = "Hello there!!"
+2017-11-21 23:40:13 - let trueValue = true
+2017-11-21 23:40:13 - let falseValue = false
+2017-11-21 23:40:13 - Console.WriteLine("\nIntegral Data Types")
+2017-11-21 23:40:13 - printfn "x: %i" x
+2017-11-21 23:40:13 - printfn "y: %f" y
+2017-11-21 23:40:13 - printfn "s: %i" s
+2017-11-21 23:40:13 - printfn "z: %i" z
+2017-11-21 23:40:13 - Console.WriteLine("\nString Data Types")
+2017-11-21 23:40:13 - printfn "char: %c" char
+2017-11-21 23:40:13 - printfn "words: %s" words
+2017-11-21 23:40:13 - Console.WriteLine("\nBoolean Data Types")
+2017-11-21 23:40:13 - printfn "trueValue: %b" (trueValue)
+2017-11-21 23:40:13 - printfn "falseValue: %b" (falseValue)
+2017-11-22 00:37:28 - let (string:x) (string:y) =
+2017-11-22 00:37:28 -     "[ " + x + " " + y + "]"
+2017-11-22 00:37:28 - Unexpected symbol '(' in binding. Expected '=' or other token.
+2017-11-22 00:37:28 - The type 'x' is not defined.
+2017-11-22 00:38:01 - let combine (string:x) (string:y) =
+2017-11-22 00:38:01 -     "[ " + x + " " + y + "]"
+2017-11-22 00:38:01 - The type 'x' is not defined.
+2017-11-22 00:38:01 - The type 'y' is not defined.
+2017-11-22 00:38:01 - 'string' is bound twice in this pattern
+2017-11-22 00:38:01 - The type 'uint32' does not match the type 'string'
+2017-11-22 00:38:01 - The type 'uint32' does not match the type 'string'
+2017-11-22 00:39:57 - let combine (x:string) (y:string) =
+2017-11-22 00:39:57 -     "[ " + x + " " + y + "]"
+2017-11-22 00:39:57 - combine "Hello" "World!!"
+2017-12-22 11:27:56 - // include directory, this will be replaced by the kernel
+2017-12-22 11:27:56 - #I "/home/nbcommon/IfSharp/bin"
+2017-12-22 11:27:56 - // load base dlls
+2017-12-22 11:27:56 - #r "IfSharp.Kernel.dll"
+2017-12-22 11:27:56 - #r "NetMQ.dll"
+2017-12-22 11:27:56 - // open the global functions and methods
+2017-12-22 11:27:56 - open IfSharp.Kernel
+2017-12-22 11:27:56 - open IfSharp.Kernel.Globals
+2017-12-22 11:28:03 - F# Interactive for F# 4.1
+2017-12-22 11:28:03 - Freely distributed under the Apache 2.0 Open Source License
+2017-12-22 11:28:03 - For help type #help;;
+2017-12-22 11:28:03 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2017-12-22 11:28:03 -   seq []
+2017-12-22 11:28:03 - --> Added '/home/nbcommon/IfSharp/bin' to library include path
+2017-12-22 11:28:03 - --> Referenced '/home/nbcommon/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2017-12-22 11:28:03 - --> Referenced '/home/nbcommon/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2017-12-22 11:28:03 - Unknown content type on shell. msg_type is `comm_info_request`
+2017-12-22 11:42:01 - paket add MathNet.Numerics.FSharp
+2017-12-22 11:42:01 - The value or constructor 'paket' is not defined.
+2017-12-22 11:42:32 - Paket.Package
+2017-12-22 11:42:32 -   [ "MathNet.Numerics"
+2017-12-22 11:42:32 -     "MathNet.Numerics.FSharp"
+2017-12-22 11:42:32 -   ]
+2017-12-22 11:42:32 -   
+2017-12-22 11:42:32 - The value, namespace, type or module 'Paket' is not defined.
+2017-12-22 11:46:51 - open System
+2017-12-22 11:46:51 - open System.IO
+2017-12-22 11:46:51 - Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
+2017-12-22 11:46:51 - if not (File.Exists "paket.exe") then
+2017-12-22 11:46:51 -     let url = "http://fsprojects.github.io/Paket/stable"
+2017-12-22 11:46:51 -     use wc = new Net.WebClient()
+2017-12-22 11:46:51 -     let tmp = Path.GetTempFileName()
+2017-12-22 11:46:51 -     let stable = wc.DownloadString(url)
+2017-12-22 11:46:51 -     wc.DownloadFile(stable, tmp)
+2017-12-22 11:46:51 -     File.Move(tmp,Path.GetFileName stable)
+2017-12-22 11:46:51 - #r "paket.exe"
+2017-12-22 11:49:07 - open Paket
+2017-12-22 11:49:07 - // Locate the paket.dependencies file.
+2017-12-22 11:49:07 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__)
+2017-12-22 11:49:09 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2017-12-22 11:49:09 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2017-12-22 11:49:09 - Like this:
+2017-12-22 11:49:09 - MySourceDir
+2017-12-22 11:49:09 -   .paket
+2017-12-22 11:49:09 -   paket.dependencies
+2017-12-22 11:49:09 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2017-12-22 11:49:09 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2017-12-22 11:49:09 - Like this:
+2017-12-22 11:49:09 - MySourceDir
+2017-12-22 11:49:09 -   .paket
+2017-12-22 11:49:09 -   paket.dependencies
+2017-12-22 11:49:09 -   at Microsoft.FSharp.Core.PrintfModule+PrintFormatToStringThenFail@1379[TResult].Invoke (System.String message) [0x00001] in <9bc54af782394304b80eb1be40a07ff2>:0 
+2017-12-22 11:49:09 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finish () [0x00012] in <9bc54af782394304b80eb1be40a07ff2>:0 
+2017-12-22 11:49:09 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <9bc54af782394304b80eb1be40a07ff2>:0 
+2017-12-22 11:49:09 -   at <StartupCode$Paket-Core>.$PublicAPI+Locate@52-6.Invoke (System.String arg70) [0x00001] in <9bc54af782394304b80eb1be40a07ff2>:0 
+2017-12-22 11:49:09 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <9bc54af782394304b80eb1be40a07ff2>:0 
+2017-12-22 11:49:09 -   at Paket.Dependencies.Locate (System.String path) [0x00052] in <9bc54af782394304b80eb1be40a07ff2>:0 
+2017-12-22 11:49:09 -   at <StartupCode$FSI_0007>.$FSI_0007.main@ () [0x00001] in <ccf5409572be4594a7954dbba3490724>:0 
+2017-12-22 11:49:09 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2017-12-22 11:49:09 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-23 10:14:16 - // include directory, this will be replaced by the kernel
+2017-12-23 10:14:16 - #I "/home/nbcommon/IfSharp/bin"
+2017-12-23 10:14:16 - // load base dlls
+2017-12-23 10:14:16 - #r "IfSharp.Kernel.dll"
+2017-12-23 10:14:16 - #r "NetMQ.dll"
+2017-12-23 10:14:16 - // open the global functions and methods
+2017-12-23 10:14:16 - open IfSharp.Kernel
+2017-12-23 10:14:16 - open IfSharp.Kernel.Globals
+2017-12-23 10:14:22 - F# Interactive for F# 4.1
+2017-12-23 10:14:22 - Freely distributed under the Apache 2.0 Open Source License
+2017-12-23 10:14:22 - For help type #help;;
+2017-12-23 10:14:22 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2017-12-23 10:14:22 -   seq []
+2017-12-23 10:14:22 - --> Added '/home/nbcommon/IfSharp/bin' to library include path
+2017-12-23 10:14:22 - --> Referenced '/home/nbcommon/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2017-12-23 10:14:22 - --> Referenced '/home/nbcommon/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2017-12-23 10:14:22 - Unknown content type on shell. msg_type is `comm_info_request`
+2017-12-23 10:34:17 - #load "Paket.fsx"
+2017-12-23 10:34:32 - #load "Paket.fsx"
+2017-12-23 10:38:26 - Unknown content type on shell. msg_type is `comm_info_request`
+2017-12-23 10:38:38 - #load "Paket.fsx"
+2017-12-23 10:43:43 - Unknown content type on shell. msg_type is `comm_info_request`
+2017-12-23 10:44:19 - #load "Paket.fsx"
+2017-12-23 10:44:19 - Paket.Package
+2017-12-23 10:44:19 -     [   "MathNet.Numerics.FSharp"
+2017-12-23 10:44:19 -         "FSharp.Data"
+2017-12-23 10:44:19 -     ]
+2017-12-23 10:45:15 - #r "packages/MathNet.Numerics.FSharp/lib/net40/MathNet.Numerics.FSharp.dll"
+2017-12-23 10:45:15 - #r "packages/FSharp.Data/lib/net40/FSharp.Data.dll"
+2017-12-23 10:45:15 - Unable to find the file 'packages/FSharp.Data/lib/net40/FSharp.Data.dll' in any of
+2017-12-23 10:45:15 -  /usr/lib/mono/4.5
+2017-12-23 10:45:15 -  /usr/lib/mono/4.5/Facades
+2017-12-23 10:45:15 -  /home/nbcommon/IfSharp/bin
+2017-12-23 10:45:15 -  /home/nbuser/library
+2017-12-23 10:45:15 -  /home/nbcommon/IfSharp/bin/
+2017-12-23 10:45:54 - #r "packages/MathNet.Numerics.FSharp/lib/net40/MathNet.Numerics.FSharp.dll"
+2017-12-23 10:45:54 - #r "packages/FSharp.Data/lib/net40/FSharp.Data.dll"
+2017-12-23 10:45:54 - Unable to find the file 'packages/FSharp.Data/lib/net40/FSharp.Data.dll' in any of
+2017-12-23 10:45:54 -  /usr/lib/mono/4.5
+2017-12-23 10:45:54 -  /usr/lib/mono/4.5/Facades
+2017-12-23 10:45:54 -  /home/nbcommon/IfSharp/bin
+2017-12-23 10:45:54 -  /home/nbuser/library
+2017-12-23 10:45:54 -  /home/nbcommon/IfSharp/bin/
+2017-12-23 10:49:21 - !ls
+2017-12-23 10:49:21 - The value or constructor 'ls' is not defined. Maybe you want one of the following:
+2017-12-23 10:49:21 -    List
+2017-12-23 10:49:21 -    list
+2017-12-23 10:49:21 -    MS
+2017-12-23 10:49:40 - ! ls
+2017-12-23 10:49:41 - The value or constructor 'ls' is not defined. Maybe you want one of the following:
+2017-12-23 10:49:41 -    List
+2017-12-23 10:49:41 -    list
+2017-12-23 10:49:41 -    MS
+2017-12-23 10:51:13 - #r "packages/MathNet.Numerics.FSharp/lib/net40/MathNet.Numerics.FSharp.dll"
+2017-12-23 10:51:13 - //#r "packages/FSharp.Data/lib/net40/FSharp.Data.dll"
+2017-12-23 10:51:52 - open FSharp.Data
+2017-12-23 10:54:15 - let data = WorldBankData.DataContext()
+2017-12-23 10:54:15 - The value, namespace, type or module 'WorldBankData' is not defined.
+2017-12-23 10:56:00 - open FSharp.Data

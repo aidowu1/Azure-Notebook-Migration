@@ -1,0 +1,203 @@
+2017-12-27 02:29:14 - // include directory, this will be replaced by the kernel
+2017-12-27 02:29:14 - #I "/home/nbcommon/IfSharp/bin"
+2017-12-27 02:29:14 - // load base dlls
+2017-12-27 02:29:14 - #r "IfSharp.Kernel.dll"
+2017-12-27 02:29:14 - #r "NetMQ.dll"
+2017-12-27 02:29:14 - // open the global functions and methods
+2017-12-27 02:29:14 - open IfSharp.Kernel
+2017-12-27 02:29:14 - open IfSharp.Kernel.Globals
+2017-12-27 02:29:28 - F# Interactive for F# 4.1
+2017-12-27 02:29:28 - Freely distributed under the Apache 2.0 Open Source License
+2017-12-27 02:29:28 - For help type #help;;
+2017-12-27 02:29:28 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2017-12-27 02:29:28 -   seq []
+2017-12-27 02:29:28 - --> Added '/home/nbcommon/IfSharp/bin' to library include path
+2017-12-27 02:29:28 - --> Referenced '/home/nbcommon/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2017-12-27 02:29:28 - --> Referenced '/home/nbcommon/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2017-12-27 02:29:28 - Unknown content type on shell. msg_type is `comm_info_request`
+2017-12-27 02:39:23 - #load "Paket.fsx"
+2017-12-27 02:39:23 - Paket.Package 
+2017-12-27 02:39:23 -   ["XPlot.Plotly"
+2017-12-27 02:39:23 -    "MathNet.Numerics"
+2017-12-27 02:39:23 -    "MathNet.Numerics.FSharp"]
+2017-12-27 02:39:23 - #load "Paket.Generated.Refs.fsx"
+2017-12-27 02:39:23 - #load "XPlot.Plotly.Paket.fsx"
+2017-12-27 02:39:23 - #load "XPlot.Plotly.fsx"
+2017-12-27 02:41:03 - open System
+2017-12-27 02:41:03 - open System.Linq
+2017-12-27 02:41:03 - open MathNet.Numerics
+2017-12-27 02:41:03 - open MathNet.Numerics.Distributions
+2017-12-27 02:41:03 - open MathNet.Numerics.LinearAlgebra
+2017-12-27 02:41:03 - open MathNet.Numerics.Random
+2017-12-27 02:43:39 - let x = vector [1..10]
+2017-12-27 02:43:40 - Expression evaluation failed: The type initializer for 'MathNet.Numerics.LinearAlgebra.Vector`1' threw an exception.
+2017-12-27 02:43:40 - TypeInitializationExceptionThe type initializer for 'MathNet.Numerics.LinearAlgebra.Vector`1' threw an exception.
+2017-12-27 02:43:40 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2017-12-27 02:43:40 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:43:40 - NotSupportedExceptionMatrices and vectors of type 'Int32' are not supported. Only Double, Single, Complex or Complex32 are supported at this point.
+2017-12-27 02:43:40 -   at MathNet.Numerics.LinearAlgebra.BuilderInstance`1[T].Create () [0x000ed] in <37cd379a60cd4396af21bbc1e31c4282>:0 
+2017-12-27 02:43:40 -   at System.Lazy`1[T].CreateValue () [0x00081] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:43:40 -   at System.Lazy`1[T].LazyInitValue () [0x00080] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:43:40 -   at System.Lazy`1[T].get_Value () [0x0003a] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:43:40 -   at MathNet.Numerics.LinearAlgebra.BuilderInstance`1[T].get_Vector () [0x00000] in <37cd379a60cd4396af21bbc1e31c4282>:0 
+2017-12-27 02:43:40 -   at MathNet.Numerics.LinearAlgebra.Vector`1[T]..cctor () [0x00000] in <37cd379a60cd4396af21bbc1e31c4282>:0 
+2017-12-27 02:44:10 - let x = vector [1..10]
+2017-12-27 02:44:10 - Expression evaluation failed: The type initializer for 'MathNet.Numerics.LinearAlgebra.Vector`1' threw an exception.
+2017-12-27 02:44:10 - TypeInitializationExceptionThe type initializer for 'MathNet.Numerics.LinearAlgebra.Vector`1' threw an exception.
+2017-12-27 02:44:10 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2017-12-27 02:44:10 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:44:10 - NotSupportedExceptionMatrices and vectors of type 'Int32' are not supported. Only Double, Single, Complex or Complex32 are supported at this point.
+2017-12-27 02:44:10 -   at MathNet.Numerics.LinearAlgebra.BuilderInstance`1[T].Create () [0x000ed] in <37cd379a60cd4396af21bbc1e31c4282>:0 
+2017-12-27 02:44:10 -   at System.Lazy`1[T].CreateValue () [0x00081] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:44:10 -   at System.Lazy`1[T].LazyInitValue () [0x00080] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:44:10 -   at System.Lazy`1[T].get_Value () [0x0003a] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:44:10 -   at MathNet.Numerics.LinearAlgebra.BuilderInstance`1[T].get_Vector () [0x00000] in <37cd379a60cd4396af21bbc1e31c4282>:0 
+2017-12-27 02:44:10 -   at MathNet.Numerics.LinearAlgebra.Vector`1[T]..cctor () [0x00000] in <37cd379a60cd4396af21bbc1e31c4282>:0 
+2017-12-27 02:45:20 - open System
+2017-12-27 02:45:20 - open System.Linq
+2017-12-27 02:45:20 - open MathNet.Numerics
+2017-12-27 02:45:20 - open MathNet.Numerics.Distributions
+2017-12-27 02:45:20 - open MathNet.Numerics.LinearAlgebra
+2017-12-27 02:45:20 - open MathNet.Numerics.Random
+2017-12-27 02:45:24 - let x = vector [1..10]
+2017-12-27 02:45:24 - Expression evaluation failed: The type initializer for 'MathNet.Numerics.LinearAlgebra.Vector`1' threw an exception.
+2017-12-27 02:45:24 - TypeInitializationExceptionThe type initializer for 'MathNet.Numerics.LinearAlgebra.Vector`1' threw an exception.
+2017-12-27 02:45:24 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2017-12-27 02:45:24 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:45:24 - NotSupportedExceptionMatrices and vectors of type 'Int32' are not supported. Only Double, Single, Complex or Complex32 are supported at this point.
+2017-12-27 02:45:24 -   at MathNet.Numerics.LinearAlgebra.BuilderInstance`1[T].Create () [0x000ed] in <37cd379a60cd4396af21bbc1e31c4282>:0 
+2017-12-27 02:45:24 -   at System.Lazy`1[T].CreateValue () [0x00081] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:45:24 -   at System.Lazy`1[T].LazyInitValue () [0x00080] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:45:24 -   at System.Lazy`1[T].get_Value () [0x0003a] in <77c9551943624fd18301ba6f78a841e5>:0 
+2017-12-27 02:45:24 -   at MathNet.Numerics.LinearAlgebra.BuilderInstance`1[T].get_Vector () [0x00000] in <37cd379a60cd4396af21bbc1e31c4282>:0 
+2017-12-27 02:45:24 -   at MathNet.Numerics.LinearAlgebra.Vector`1[T]..cctor () [0x00000] in <37cd379a60cd4396af21bbc1e31c4282>:0 
+2017-12-27 13:14:57 - // include directory, this will be replaced by the kernel
+2017-12-27 13:14:57 - #I "/home/nbcommon/IfSharp/bin"
+2017-12-27 13:14:57 - // load base dlls
+2017-12-27 13:14:57 - #r "IfSharp.Kernel.dll"
+2017-12-27 13:14:57 - #r "NetMQ.dll"
+2017-12-27 13:14:57 - // open the global functions and methods
+2017-12-27 13:14:57 - open IfSharp.Kernel
+2017-12-27 13:14:57 - open IfSharp.Kernel.Globals
+2017-12-27 13:15:11 - F# Interactive for F# 4.1
+2017-12-27 13:15:11 - Freely distributed under the Apache 2.0 Open Source License
+2017-12-27 13:15:11 - For help type #help;;
+2017-12-27 13:15:11 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2017-12-27 13:15:11 -   seq []
+2017-12-27 13:15:11 - --> Added '/home/nbcommon/IfSharp/bin' to library include path
+2017-12-27 13:15:11 - --> Referenced '/home/nbcommon/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2017-12-27 13:15:11 - --> Referenced '/home/nbcommon/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2017-12-27 13:15:12 - Unknown content type on shell. msg_type is `comm_info_request`
+2017-12-27 13:15:22 - #load "Paket.fsx"
+2017-12-27 13:15:22 - Paket.Package 
+2017-12-27 13:15:22 -   ["XPlot.Plotly"
+2017-12-27 13:15:22 -    "MathNet.Numerics"
+2017-12-27 13:15:22 -    "MathNet.Numerics.FSharp"]
+2017-12-27 13:15:22 - #load "Paket.Generated.Refs.fsx"
+2017-12-27 13:15:22 - #load "XPlot.Plotly.Paket.fsx"
+2017-12-27 13:15:22 - #load "XPlot.Plotly.fsx"
+2017-12-27 13:16:14 - open System
+2017-12-27 13:16:14 - open System.Linq
+2017-12-27 13:16:14 - open MathNet.Numerics
+2017-12-27 13:16:14 - open MathNet.Numerics.Distributions
+2017-12-27 13:16:14 - open MathNet.Numerics.LinearAlgebra
+2017-12-27 13:16:14 - open MathNet.Numerics.Random
+2017-12-27 13:16:19 - let m1 = matrix [[ 2.0; 3.0 ]
+2017-12-27 13:16:19 -                  [ 4.0; 5.0 ]]
+2017-12-27 13:16:19 - let v1 = vector [ 1.0; 2.0; 3.0 ]
+2017-12-27 13:16:27 - m1
+2017-12-27 13:18:22 - m1.[0,..]
+2017-12-27 13:18:23 - Unexpected symbol ']' in expression
+2017-12-27 13:18:44 - m1.[0,1..]
+2017-12-27 13:28:54 - let rawData = 
+2017-12-27 13:28:54 -     [| [|65.0; 220.0|]; [|73.0; 160.0|]; [|59.0; 110.0|]; [|61.0; 120.0|]; [|75.0; 150.0|]; [|67.0; 240.0|];
+2017-12-27 13:28:54 -     [|68.0; 230.0|]; [|70.0; 220.0|]; [|62.0; 130.0|]; [|66.0; 210.0|]; [|77.0; 190.0|]; [|75.0; 180.0|]; [|74.0; 170.0|];
+2017-12-27 13:28:54 -     [|70.0; 210.0|]; [|61.0; 110.0|]; [|58.0; 100.0|]; [|66.0; 230.0|]; [|59.0; 120.0|]; [|68.0; 210.0|]; [|61.0; 130.0|] |] 
+2017-12-27 13:29:23 - rawData
+2017-12-27 13:30:11 - rawData.[0..4,0]
+2017-12-27 13:30:11 - This expression was expected to have type
+2017-12-27 13:30:11 -     ''a [,]'    
+2017-12-27 13:30:11 - but here has type
+2017-12-27 13:30:11 -     'float [] []'    
+2017-12-27 13:30:56 - rawData.[0..4]
+2017-12-27 13:32:32 - rawData.[0..4,0]
+2017-12-27 13:32:33 - This expression was expected to have type
+2017-12-27 13:32:33 -     ''a [,]'    
+2017-12-27 13:32:33 - but here has type
+2017-12-27 13:32:33 -     'float [] []'    
+2017-12-27 13:32:48 - rawData.[0,0]
+2017-12-27 13:32:48 - This expression was expected to have type
+2017-12-27 13:32:48 -     ''a [,]'    
+2017-12-27 13:32:48 - but here has type
+2017-12-27 13:32:48 -     'float [] []'    
+2017-12-27 13:33:07 - rawData
+2017-12-27 13:33:20 - type(rawData)
+2017-12-27 13:33:20 - Unexpected identifier in type name. Expected infix operator, quote symbol or other token.
+2017-12-27 13:33:20 - parse error
+2017-12-27 13:33:29 - typeof(rawData)
+2017-12-27 13:33:29 - The generic function 'typeof' must be given explicit type argument(s)
+2017-12-27 13:33:29 - This value is not a function and cannot be applied
+2017-12-27 13:34:51 - rawData.[0..4].[0]
+2017-12-27 13:35:35 - rawData.[0..].[0..5]
+2017-12-27 13:37:33 - let s = [|[|0; 0; 0|]; [|0; 0; 0|]|]
+2017-12-27 13:37:47 - s
+2017-12-27 13:38:13 - s.[0..,1]
+2017-12-27 13:38:14 - This expression was expected to have type
+2017-12-27 13:38:14 -     ''a [,]'    
+2017-12-27 13:38:14 - but here has type
+2017-12-27 13:38:14 -     'int [] []'    
+2017-12-27 13:40:08 - let s: int [,] = [|[|0; 0; 0|]; [|0; 0; 0|]|]
+2017-12-27 13:40:08 - This expression was expected to have type
+2017-12-27 13:40:08 -     'int [,]'    
+2017-12-27 13:40:08 - but here has type
+2017-12-27 13:40:08 -     ''a []'    
+2017-12-27 13:59:19 - let s: int [,] = array2D [|[|0; 0; 0|]; [|0; 0; 0|]|]
+2017-12-27 13:59:38 - let rawData = aray2D
+2017-12-27 13:59:38 -     [| [|65.0; 220.0|]; [|73.0; 160.0|]; [|59.0; 110.0|]; [|61.0; 120.0|]; [|75.0; 150.0|]; [|67.0; 240.0|];
+2017-12-27 13:59:38 -     [|68.0; 230.0|]; [|70.0; 220.0|]; [|62.0; 130.0|]; [|66.0; 210.0|]; [|77.0; 190.0|]; [|75.0; 180.0|]; [|74.0; 170.0|];
+2017-12-27 13:59:38 -     [|70.0; 210.0|]; [|61.0; 110.0|]; [|58.0; 100.0|]; [|66.0; 230.0|]; [|59.0; 120.0|]; [|68.0; 210.0|]; [|61.0; 130.0|] |] 
+2017-12-27 13:59:39 - Unexpected symbol '[|' in binding. Expected incomplete structured construct at or before this point or other token.
+2017-12-27 13:59:39 - Incomplete value or function definition. If this is in an expression, the body of the expression must be indented to the same column as the 'let' keyword.
+2017-12-27 13:59:39 - Incomplete structured construct at or before this point in interaction. Expected incomplete structured construct at or before this point, ';', ';;' or other token.
+2017-12-27 13:59:39 - parse error
+2017-12-27 13:59:46 - let rawData = array2D
+2017-12-27 13:59:46 -     [| [|65.0; 220.0|]; [|73.0; 160.0|]; [|59.0; 110.0|]; [|61.0; 120.0|]; [|75.0; 150.0|]; [|67.0; 240.0|];
+2017-12-27 13:59:46 -     [|68.0; 230.0|]; [|70.0; 220.0|]; [|62.0; 130.0|]; [|66.0; 210.0|]; [|77.0; 190.0|]; [|75.0; 180.0|]; [|74.0; 170.0|];
+2017-12-27 13:59:46 -     [|70.0; 210.0|]; [|61.0; 110.0|]; [|58.0; 100.0|]; [|66.0; 230.0|]; [|59.0; 120.0|]; [|68.0; 210.0|]; [|61.0; 130.0|] |] 
+2017-12-27 13:59:46 - Unexpected symbol '[|' in binding. Expected incomplete structured construct at or before this point or other token.
+2017-12-27 13:59:46 - Incomplete value or function definition. If this is in an expression, the body of the expression must be indented to the same column as the 'let' keyword.
+2017-12-27 13:59:46 - Incomplete structured construct at or before this point in interaction. Expected incomplete structured construct at or before this point, ';', ';;' or other token.
+2017-12-27 13:59:46 - parse error
+2017-12-27 14:01:05 - let rawData: double[,] = array2D
+2017-12-27 14:01:05 -     [| [|65.0; 220.0|]; [|73.0; 160.0|]; [|59.0; 110.0|]; [|61.0; 120.0|]; [|75.0; 150.0|]; [|67.0; 240.0|];
+2017-12-27 14:01:05 -     [|68.0; 230.0|]; [|70.0; 220.0|]; [|62.0; 130.0|]; [|66.0; 210.0|]; [|77.0; 190.0|]; [|75.0; 180.0|]; [|74.0; 170.0|];
+2017-12-27 14:01:05 -     [|70.0; 210.0|]; [|61.0; 110.0|]; [|58.0; 100.0|]; [|66.0; 230.0|]; [|59.0; 120.0|]; [|68.0; 210.0|]; [|61.0; 130.0|] |] 
+2017-12-27 14:01:06 - Unexpected symbol '[|' in binding. Expected incomplete structured construct at or before this point or other token.
+2017-12-27 14:01:06 - Incomplete value or function definition. If this is in an expression, the body of the expression must be indented to the same column as the 'let' keyword.
+2017-12-27 14:01:06 - Incomplete structured construct at or before this point in interaction. Expected incomplete structured construct at or before this point, ';', ';;' or other token.
+2017-12-27 14:01:06 - parse error
+2017-12-27 14:02:23 - let rawData: double[,] = array2D
+2017-12-27 14:02:23 -     [[|65.0; 220.0|]; [|73.0; 160.0|]; [|59.0; 110.0|]; [|61.0; 120.0|]; [|75.0; 150.0|]; [|67.0; 240.0|];
+2017-12-27 14:02:23 -     [|68.0; 230.0|]; [|70.0; 220.0|]; [|62.0; 130.0|]; [|66.0; 210.0|]; [|77.0; 190.0|]; [|75.0; 180.0|]; [|74.0; 170.0|];
+2017-12-27 14:02:23 -     [|70.0; 210.0|]; [|61.0; 110.0|]; [|58.0; 100.0|]; [|66.0; 230.0|]; [|59.0; 120.0|]; [|68.0; 210.0|]; [|61.0; 130.0|] ] 
+2017-12-27 14:02:23 - Unexpected symbol '[' in binding. Expected incomplete structured construct at or before this point or other token.
+2017-12-27 14:02:23 - Incomplete value or function definition. If this is in an expression, the body of the expression must be indented to the same column as the 'let' keyword.
+2017-12-27 14:02:23 - Incomplete structured construct at or before this point in interaction. Expected incomplete structured construct at or before this point, ';', ';;' or other token.
+2017-12-27 14:02:23 - parse error
+2017-12-27 14:02:33 - let rawData = array2D
+2017-12-27 14:02:33 -     [[|65.0; 220.0|]; [|73.0; 160.0|]; [|59.0; 110.0|]; [|61.0; 120.0|]; [|75.0; 150.0|]; [|67.0; 240.0|];
+2017-12-27 14:02:33 -     [|68.0; 230.0|]; [|70.0; 220.0|]; [|62.0; 130.0|]; [|66.0; 210.0|]; [|77.0; 190.0|]; [|75.0; 180.0|]; [|74.0; 170.0|];
+2017-12-27 14:02:33 -     [|70.0; 210.0|]; [|61.0; 110.0|]; [|58.0; 100.0|]; [|66.0; 230.0|]; [|59.0; 120.0|]; [|68.0; 210.0|]; [|61.0; 130.0|] ] 
+2017-12-27 14:02:34 - Unexpected symbol '[' in binding. Expected incomplete structured construct at or before this point or other token.
+2017-12-27 14:02:34 - Incomplete value or function definition. If this is in an expression, the body of the expression must be indented to the same column as the 'let' keyword.
+2017-12-27 14:02:34 - Incomplete structured construct at or before this point in interaction. Expected incomplete structured construct at or before this point, ';', ';;' or other token.
+2017-12-27 14:02:34 - parse error
+2017-12-27 14:03:04 - let rawData = 
+2017-12-27 14:03:04 -     [[|65.0; 220.0|]; [|73.0; 160.0|]; [|59.0; 110.0|]; [|61.0; 120.0|]; [|75.0; 150.0|]; [|67.0; 240.0|];
+2017-12-27 14:03:04 -     [|68.0; 230.0|]; [|70.0; 220.0|]; [|62.0; 130.0|]; [|66.0; 210.0|]; [|77.0; 190.0|]; [|75.0; 180.0|]; [|74.0; 170.0|];
+2017-12-27 14:03:04 -     [|70.0; 210.0|]; [|61.0; 110.0|]; [|58.0; 100.0|]; [|66.0; 230.0|]; [|59.0; 120.0|]; [|68.0; 210.0|]; [|61.0; 130.0|] ] 
+2017-12-27 14:03:25 - let rawData = 
+2017-12-27 14:03:25 -    array2D [[|65.0; 220.0|]; [|73.0; 160.0|]; [|59.0; 110.0|]; [|61.0; 120.0|]; [|75.0; 150.0|]; [|67.0; 240.0|];
+2017-12-27 14:03:25 -     [|68.0; 230.0|]; [|70.0; 220.0|]; [|62.0; 130.0|]; [|66.0; 210.0|]; [|77.0; 190.0|]; [|75.0; 180.0|]; [|74.0; 170.0|];
+2017-12-27 14:03:25 -     [|70.0; 210.0|]; [|61.0; 110.0|]; [|58.0; 100.0|]; [|66.0; 230.0|]; [|59.0; 120.0|]; [|68.0; 210.0|]; [|61.0; 130.0|] ] 
+2017-12-27 14:03:53 - rawData.[*,0..1]
